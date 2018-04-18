@@ -19,22 +19,57 @@
 /////////////// variables/////////////
 
 $twitterBlue: #1da1f2;
+$grey: #bdbdbd;
 
 ///////////////// Navbar mobile //////////////////
+
+* {
+  box-sizing: border-box;
+}
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(0,0,0,0.25);
+}
+
+.user-profile {
+  margin: 10px 10px;
+
+}
+
+#main-mobile-head {
+  padding-left: 10px;
+}
 
 .flex-nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 50px;
   padding: 0;
+  margin: 0;
 }
 
-.nav-item {
+.nav-items {
   text-decoration: none;
   list-style-type: none;
-  color: $twitterBlue;
+  padding-bottom: 10px;
 }
+
+.main-nav-link {
+  color: $grey;
+  padding: 0 13px 10px 13px;
+}
+
+.main-nav-link:hover {
+  color: $twitterBlue;
+  cursor: pointer;
+  border-bottom: 2px solid $twitterBlue;
+}
+
 
 
 

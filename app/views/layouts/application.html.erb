@@ -12,18 +12,34 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <nav class="main-nav">
-          <ul class="flex-nav">
-            <li class="nav-item"><i class="fas fa-home fa-lg"></i></li>
-            <li class="nav-item"><i class="fas fa-search fa-lg"></i></li>
-            <li class="nav-item"><i class="far fa-bell fa-lg"></i></li>
-            <li class="nav-item"><i class="fas fa-envelope fa-lg"></i></li>
-          </ul>
+        <div class="user-profile"><i class="far fa-smile fa-lg"></i><span id="main-mobile-head">This is Home</span></div>
+        <ul class="flex-nav">
+          <li class="nav-items">
+            <%= link_to(root_path, :class => "main-nav-link")  do %>
+            <i class="fas fa-home fa-lg"></i>
+            <% end %>
+          </li>
+          <li class="nav-items">
+            <%= link_to(root_path, :class => "main-nav-link")  do %>
+            <i class="fas fa-search fa-lg"></i>
+            <% end %>
+          </li>
+          <li class="nav-items">
+            <%= link_to(root_path, :class => "main-nav-link")  do %>
+            <i class="far fa-bell fa-lg"></i>
+            <% end %>
+          </li>
+          <li class="nav-items">
+            <%= link_to(root_path, :class => "main-nav-link")  do %>
+            <i class="fas fa-envelope fa-lg"></i>
+            <% end %>
+          </li>
+        </ul>
       </nav>
 
-
       <%= yield %>
-     </div>
-
+    </div>
+  </body>
 </html>
